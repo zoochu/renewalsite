@@ -320,7 +320,6 @@ padding: 0 50px;
 }
 
 
-
 .firstpage-1{
     margin: 0 auto;
     width: 80%;
@@ -577,7 +576,7 @@ padding: 0 50px;
 .third-1page-1{
     width:80%;
     margin: 0 22%;
-    /* position: absolute; */
+    position: relative;
     /* padding-bottom: 0; */
    
 }
