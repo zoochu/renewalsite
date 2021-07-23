@@ -1,5 +1,6 @@
 @import url('./common.css');
 
+
     /* renewal.html 메인페이지 */
     /* header */
 header{
@@ -11,13 +12,17 @@ header{
     position:fixed;
     left:0%; top:0;
     background-color:rgba(255,255,255,0.9);
+   
 }
-header a{}
+header {background-color: #78909C;}
 .new-1 img{
     height: 40px;
     padding: 0px;
 }
-.new-2 ul{display: flex;}
+.new-2 ul{
+    display: flex;
+   
+}
 .new-2 li{
     list-style: none;
     color: #b2b2b2;
@@ -25,16 +30,18 @@ header a{}
     font-size: 18px;
     font-weight: bold;
     border-bottom: none;
-    padding: 0 70px;
+    padding: 0 30px;
     position: relative;
-    
+    font-family: 'Noto Sans KR', sans-serif;;
 } 
 
 .new-2 ul li > a{
-    color: #555; 
+    color: white; 
     padding:50px 0; 
+    letter-spacing: 2px;
     display:block;
     text-decoration: none;
+    
 }
 
 .new-2 ul li > div{
@@ -56,25 +63,30 @@ header a{}
     font-size: 15px;
     word-spacing: 20px;
     }
-.new-3 a{color:#b2b2b2;} 
+.new-3 a{
+    color:rgb(226, 226, 226);
+    font-family: 'Noto Sans KR', sans-serif;
+} 
 
 
 
     /* mainpage */
 .main{margin-top:121px;}
-.mainpage-1{
-    background-color: #fbf2f2;
-    padding: 90px 0;
+.mainpage_1{
+    background-color: #CFD8DC;
+    padding: 200px 0 100px 0;
 }
-.mainpage-1 .slide{
+.mainpage_1 .slide{
     width:80%; margin:0 auto;
     overflow:hidden;
 }
-.mainpage-1 .slide figure{
+.mainpage_1 .slide figure{
     display:flex;
 }
-.mainpage-1 .slide figure img{
+.mainpage_1 .slide figure img{
     width:25%;
+    border-radius: 5px;
+    margin-right: 20px;
     /* flex-grow: 1; */
     /* transition:.5s; */
 }
@@ -82,21 +94,22 @@ header a{}
     flex-grow:10;
 } */
 
-.mainpage-1 .s_btn{
+.mainpage_1 .s_btn{
     text-align:right;
     width:80%;
     margin:30px auto 0 auto;
 }
 
-.mainpage-1 button{
+.mainpage_1 button{
     background:none;
     border:0;
     text-align: center;
     cursor:pointer;
+    color: white;
 }
-.mainpage-1 button:hover{
-    background-color:#ff4747;
-    color:#fff;
+.mainpage_1 button:hover{
+    background-color:white;
+    color:black;
 }
 
 .mainpage-2{
@@ -105,6 +118,7 @@ header a{}
     justify-content: space-between;
     width: 80%;    
     margin:0 auto;
+    
 }
 
 .mainpage-2 article{
@@ -134,7 +148,8 @@ header a{}
 } */
 
 .mainpage-2 > article > a{
-    color: #ff4747;
+    /* color: #ff4747; */
+    color: #FF9E80;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -142,17 +157,26 @@ header a{}
 
 /* 메인페이지 행사사진 */
 .mainpage-3{
-    background-color: #fbf2f2;
+    /* background-color: #fbf2f2; */
+    background-color: #ECEFF1;
     padding:120px 0;
     overflow:hidden;
 }  
 .mainpage-3title{
+    /* color: #; */
     font-size: 35px;
     text-align: center;
+    letter-spacing: 5px;
     padding: 20px 0 100px;
 }
 
-.mainpage-3 .slider img{width:90%; }
+.mainpage-3 .slider img{
+    width:90%; 
+    margin: 10px;    
+    opacity: 90%;
+    border-radius:20px;
+    
+}
 /* .mainpage-3 span{display:flex;} */
 
 
@@ -209,17 +233,19 @@ header a{}
 
 
 /* 메인페이지 하단 */
+fieldset{background-color: #CFD8DC;}
 .mainpagebottom-1{
      text-align: center;
-     padding: 5px;
-     color:#999;
+     /* background-color: #212121; */
+     padding: 10px;
+     /* color:#999; */
      font-size: 12px;
     
 }
 
 .mainpagebottom-2{  
     text-align: center;
-    background-color: #fbf2f2;
+    /* background-color: #212121; */
     height: 1.5cm;
     padding: 10px;
     font-size: 14px;
@@ -263,14 +289,14 @@ padding: 0 50px;
 /* 각페이지 서브메뉴 */
 .menubox ul{
     display: flex;
-    border: 1px solid rgb(196, 194, 194);
+    border: 2px solid rgb(196, 194, 194);
 }
 .menubox ul li{
     list-style: none;
     font-size: 18px;
     padding:0 50px;
     position: relative;
-    border: 1px solid rgb(196, 194, 194);
+    border: 2px solid rgb(196, 194, 194);
     
     
 }
@@ -303,11 +329,17 @@ padding: 0 50px;
 
 .firstpagee{position: relative; }
 .firstpagee h2{
-    padding:70px 850px;
+    text-align: center;
+    padding: 8% 0 3%;
+    /* padding:70px 850px; */
+    /* margin: 10% 60%% 10%; */
+    /* padding: 10% 50% 5% 50%; */
     font-size:30px;}
 .firstpagee img{
-    margin: 0 780px;
-    padding-bottom: 40px;
+    align-items: center;
+    margin: 0 42% 0;
+    /* margin: 0 780px; */
+    /* padding-bottom: 40px; */
     width: 250px;}
     
 .firstpagee b{font-size: 18px;}
@@ -349,8 +381,10 @@ padding: 0 50px;
 }
 
 .firstpage-1 h1{
-    /* position: relative; */
-    /* padding:80px 50px; */
+    position: relative;
+    color: #ffff;
+    text-align: center;
+     top: 280px; 
     font-size:40px;
     
 }
@@ -435,8 +469,10 @@ padding: 0 50px;
         }
 .secondpage-1 img{
             position: relative;
+            justify-content: center;
+            flex-direction: column;
             margin: 30px 0;
-            padding: 0 230px;
+            padding: 0 140px;
             height: 300px;   
     }
 
@@ -460,7 +496,8 @@ padding: 0 50px;
 
 .second-1page-1 h2{
     position: relative;
-    margin: 0 870px;
+    text-align: center;
+    /* margin: 0 870px; */
     padding:70px 0px;
     font-size:30px;}
 .second-1page-2{
@@ -475,10 +512,11 @@ padding: 0 50px;
 
 
 .second-2page-1 h2{
-    margin: 0 auto;
+    position: relative;
     text-align: center;
-    padding: 60px 0;
-    font-size:30px;
+    font-size: 30px;
+    /* margin: 50px 860px; */
+    padding: 0 0;
 }
 .second-2page-2{
     text-align: center;
@@ -497,17 +535,23 @@ padding: 0 50px;
     border: 1px solid #555;
     margin-bottom: 100px;    
 }
-
+.second-2page-4 h2{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 30px;
+}
 
 .thirdpage{
     margin:  0 auto;
     width: 100%;
 }
 .thirdpage h1{    
-    position: absolute;
+    position: relative;
     color: #ffff;
-    top: 440px;
-    left: 1000px;
+    text-align: center;
+    top: 280px; 
     font-size: 50px;
 
 }
@@ -529,11 +573,27 @@ padding: 0 50px;
     margin: 50px 860px;
     padding: 0 0;
 }
+/* .popup{
+    position:fixed;
+    left:0; top:0;
+    width:100%; height:100%;
+    background:#90A4AE;
+    opacity: 30%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#fff;
+    display: none;
+} */
 
 .lastpage h1{
     position: relative;
     color: #ffff;
-    top: 300px; left: 930px;
+    text-align: center;
+     top: 280px; 
+    /* left: 930px;  */
     /* padding: 420px 800px; */
     font-size: 50px;}
 
@@ -557,35 +617,54 @@ padding: 0 50px;
 
 .thirdpage-11 h2{ 
     font-size: 30px;
-    margin: 50px 860px;}
+    text-align: center;
+    padding: 90px 0 0 0;}
 
 
 
 
 .thirdpage-10 h2{
-        font-size: 30px;
-        margin: 50px 850px;
+    font-size: 30px;
+    text-align: center;
+    padding: 90px 0 0 0;
         
     }
 
 .thirdpage-12 h2{
     font-size: 30px;
-    margin: 50px 820px;
+    text-align: center;
+    padding: 90px 0 0 0;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    /* margin: 50px 820px; */
 }
 
 .third-1page-1{
     width:80%;
-    margin: 0 22%;
+    margin: 5% 41%;
     position: relative;
+    right: 30%;
+    /* flex-wrap: wrap; */
     /* padding-bottom: 0; */
    
 }
+.third-1page-1 ul{
+    display: flex;
+    flex-wrap: wrap;}
 .third-1page-1 ul li{
-    margin:0px 200px 80px 0px; 
-    right: 170px;
-    float:left; 
-    /* border:1px solid #b2b2b2; */
-     position: relative;
+    /* display: flex; */
+    align-items: center;
+
+    width:50%;
+    text-align: center;
+    /* margin: 0 5%; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+    /* padding: 0 97px; */
+    /* line-height: 35px;    */
+
      
 }
     /* position: relative;
@@ -593,14 +672,15 @@ padding: 0 50px;
     text-align: center;
  */
 
-
+ .third-1page-1 ul li > img{
+    height: 80%; width: 58%;
+ }
 
 .third-1page-1 ul li > h5{
     text-align: center;
     padding: 50px;
    
 }
-
 
 .board{
         width:60%; margin:100px auto}
