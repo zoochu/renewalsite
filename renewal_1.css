@@ -65,9 +65,7 @@ header a{}
     width: 1400px;   
 }
 
-.mainpage-2 article{
-    position: relative;
-    margin: 0 -100px;}
+.mainpage-2 article{}
 
 .mainpage-2 h3{
     border-bottom:1px solid #000;
