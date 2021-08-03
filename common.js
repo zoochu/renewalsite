@@ -6,5 +6,13 @@ $(function(){
     // function div(){
     //     $('header li').on('mo')
     // }
+
+    $('.top').on('click',function(e){
+        e.preventDefault();
+        $('html').animate({
+            scrollTop : 0
+        })
+
+    })
 });
 

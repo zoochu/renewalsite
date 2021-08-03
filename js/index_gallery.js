@@ -13,7 +13,7 @@ function init(){
         // console.log(res)
         res.renewal.forEach(function(v,i){
             tagList += ` <li><img src="${v.photo}">
-            <h5>${v.name} </h5></li>`;
+            <h5>날짜:${v.data}</h5><h5>${v.name}</h5></li>`;
         });
         elUl.innerHTML = tagList;
         const elLi = document.querySelectorAll('li');

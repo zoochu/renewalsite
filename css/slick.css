@@ -129,7 +129,7 @@
 }
 .slick-prev{right:0;}
 .slick-prev::after{
-    content:'→';
+    content:'>';
     display:block;
     font-size:3rem;
     /* color: #FF9E80; */
@@ -137,7 +137,7 @@
     /* background:'' */
 }
 .slick-next{left:0;}.slick-next::after{
-    content:'←';
+    content:'<';
     display: block;
     font-size: 3rem;
     /* color: #FF9E80; */
